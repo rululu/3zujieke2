@@ -9,6 +9,7 @@ var connection = mysql.createPool({
 });
 
 /* GET home page. */
+//茹璐璐
 router.get('/index', function(req, res, next) {
 	res.header("Access-Control-Allow-Origin","*")
   connection.query('SELECT * FROM gal',function(err, rows, fields) {
@@ -24,7 +25,7 @@ router.post('/list', function(req, res, next) {
 	  });
 });
 
-
+//申玉瑶
 router.get('/about', function(req, res, next) {
 	res.header("Access-Control-Allow-Origin","*")
   connection.query('SELECT * FROM about',function(err, rows, fields) {
@@ -32,6 +33,7 @@ router.get('/about', function(req, res, next) {
 	  });
 });
 
+//卢思豪
 router.get('/zk', function(req, res, next) {
 	res.header("Access-Control-Allow-Origin","*")
   connection.query('SELECT * FROM zk',function(err, rows, fields) {
