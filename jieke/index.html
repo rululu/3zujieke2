@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link type="text/css" rel="stylesheet" href="css/style.css">
+		<link type="text/css" rel="stylesheet" href="css/bootstrap.css">
+		<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+		<script type="text/javascript" src="js/mobile-util.js"></script>
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+	</head>
+
+	<body>
+		<div id="header">
+			<div class="ding">
+				<div class="img">
+					<img src="images/17.png" />
+					<img src="images/11.png" />
+					<img src="images/15.png" />
+					<img src="images/07.png" />
+					<img src="images/13.png" />
+				</div>
+				<ul id="nav">
+					<li class="menuItem"><a href="#home">Home</a></li>
+					<li class="menuItem"><a href="#about">About</a></li>
+					<li class="menuItem"><a href="#showreels">Showreels</a></li>
+					<li class="menuItem"><a href="#gallery">Gallery</a></li>
+					<li class="menuItem"><a href="#">Resume</a></li>
+					<li class="menuItem"><a href="#w_footer">Representation</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="box">
+			<div class="s1"></div>
+			<div class="s2"></div>
+		</div>
+		<div id="home">
+			<h1>JOHN K <span></span> HOLTE</h1>
+			<p>Actor &amp; Model</p>
+		</div>
+
+		<div id="about">
+
+		</div>
+
+		<div id="showreels">
+
+		</div>
+
+		<div id="gallery">
+			<div class="gal_images">
+				<p class="guan">&chi;</p>
+				<p class="left">&lt;</p>
+				<p class="right">&gt;</p>
+				<div class="img_gal">
+
+				</div>
+			</div>
+
+		</div>
+		<div id="w_footer">
+			<div class="w_footer_d">
+				<div class="w_footer_d_top">
+					<h2>GET IN TOUCH!</h2>
+				</div>
+				<div class="w_footer_bottom_left">
+					<h2>CONTACT</h2>
+					<p>Agent – AA Management</p>
+					<p>500 Terry Francois Street</p>
+					<p>San Francisco, CA 94158</p>
+					<p> </p>
+					<p>Tel: 123-456-7890​</p>
+					<p>info@mysite.com</p>
+					<p></p>
+					<ul>
+						<li><img src="images/footer-1.jpg" alt=""></li>
+						<li><img src="images/footer-2.jpg" alt=""></li>
+						<li><img src="images/footer-3.jpg" alt=""></li>
+						<li><img src="images/footer-4.jpg" alt=""></li>
+						<li><img src="images/footer-5.jpg" alt=""></li>
+					</ul>
+				</div>
+				<div class="w_footer_bottom_right">
+					<form action="">
+						<input type="text" placeholder="名称">
+						<input type="email" placeholder="电子邮件">
+						<input type="text" placeholder="主旨">
+						<input type="text" placeholder="讯息">
+						<button>Send</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/stickUp.min.js"></script>
+<script type="text/javascript">
+	jQuery(function($) {
+		$(document).ready(function() {
+			$('#nav').stickUp({
+				parts: {
+					0: 'home',
+					1: 'about',
+					2: 'showreels',
+					3: 'gallery',
+					4: 'resume',
+					5: 'w_footer'
+				},
+				itemClass: 'menuItem',
+				itemHover: 'change'
+			})
+		})
+	})
+</script>
